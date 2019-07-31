@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 RUN mkdir /builds && \
     apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y python3 python3-six python3-pip curl && \
+    apt-get install -y python3 python3-six python3-pip curl zip && \
     pip3 install gupload && \
     apt-get purge -y python3-pip && \
     apt-get autoclean -y && \

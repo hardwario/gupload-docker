@@ -3,7 +3,7 @@ This Docker contains [gupload - Google Drive CLI Uploader](https://github.com/ha
 
 ## Example
 ```
-docker run --rm -it -v `pwd`/credentials.json:/tmp/credentials.json -v `pwd`:/builds gupload
+docker run --rm -it -v `pwd`/credentials.json:/tmp/credentials.json -v `pwd`:/builds hardwario/gupload
 gupload --folder 1OQ3lq2O1zqZ01vUgzvg1iyXXtBJRl6pW --file a.out ../a.out --file changelog.txt ../changelog.txt
 ```
 
@@ -19,3 +19,4 @@ gupload --folder 1OQ3lq2O1zqZ01vUgzvg1iyXXtBJRl6pW --file a.out ../a.out --file 
 * curl
 * python3 
 * python3-six
+* zip
